@@ -1,0 +1,283 @@
+/* reset */
+/* animation */
+/* button */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, input,
+textarea, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+  a img {
+    border: 0; }
+
+textarea {
+  resize: none; }
+
+footer, header, aside, nav, menu, video, audio, time, progress, section, article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  display: block; }
+
+aside {
+  text-align: right; }
+
+input[type="file"] {
+  opacity: 0;
+  -moz-opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  cursor: pointer; }
+
+/* colors */
+/* shadows */
+@font-face {
+  font-family: "Parchment MF";
+  font-style: normal;
+  src: local("Parchment MF"), url("../fonts/Parchment_MF.eot") format("oet"), local("Parchment MF"), url("../fonts/Parchment_MF.woff") format("woff"), local("Parchment MF"), url("../fonts/Parchment_MF.ttf") format("truetype"), url("../fonts/Parchment_MF.svg") format("svg"); }
+html {
+  position: relative;
+  min-width: 1000px;
+  min-height: 100%; }
+  html:before, html:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../images/backgrounds/main.jpg) no-repeat right top;
+    -moz-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%; }
+  html:before {
+    left: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  html:after {
+    left: 100%;
+    margin-left: -50%; }
+
+html, html a {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+body {
+  font-size: 13px;
+  font-family: "Lucida Console", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  height: 100%;
+  min-height: 100%; }
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 956px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  background: #f8efbf;
+  background: rgba(248, 239, 191, 0.9);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  #container > h1 {
+    height: 100px;
+    text-align: center;
+    padding-bottom: 30px; }
+    #container > h1 > span {
+      position: relative;
+      zoom: 1;
+      display: inline;
+      display: -moz-inline-box;
+      display: inline-block;
+      *display: inline;
+      vertical-align: top;
+      width: 780px;
+      height: 100%;
+      background: url(../images/icons/logo_long.png) no-repeat center;
+      text-indent: -99999px;
+      text-align: left;
+      border-bottom: 1px solid #79b62b;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  #container > h2 {
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    font-family: "Parchment MF";
+    font-weight: bold;
+    line-height: 80px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  #container > .thumb {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-align: justify; }
+    #container > .thumb > img {
+      -moz-border-radius: 1px;
+      -o-border-radius: 1px;
+      -ms-border-radius: 1px;
+      -khtml-border-radius: 1px;
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
+    #container > .thumb > p {
+      padding-top: 5px;
+      font-size: 40px;
+      font-family: "Parchment MF";
+      line-height: 40px;
+      color: green;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+      #container > .thumb > p + form {
+        margin-top: 30px; }
+    #container > .thumb.left > img {
+      float: left;
+      margin-right: 20px; }
+    #container > .thumb.right > img {
+      float: right;
+      margin-left: 20px; }
+    #container > .thumb + .thumb {
+      margin-top: 25px;
+      padding-top: 30px; }
+      #container > .thumb + .thumb:before, #container > .thumb + .thumb:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -200px;
+        width: 400px;
+        height: 0;
+        border-top: 1px dashed #79b62b; }
+      #container > .thumb + .thumb:after {
+        top: 1px;
+        border-color: #000;
+        opacity: 0.25;
+        -moz-opacity: 0.25;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=25)"; }
+    #container > .thumb > form {
+      height: 40px; }
+      #container > .thumb > form > input[type="image"] {
+        height: 40px;
+        margin-left: 120px;
+        -moz-border-radius: 30px;
+        -o-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -khtml-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+        opacity: 0.9;
+        -moz-opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)";
+        -webkit-transition: opacity 0.25s ease-out;
+        -moz-transition: opacity 0.25s ease-out;
+        -o-transition: opacity 0.25s ease-out;
+        -ms-transition: opacity 0.25s ease-out;
+        transition: opacity 0.25s ease-out; }
+        #container > .thumb > form > input[type="image"]:hover {
+          opacity: 1;
+          -moz-opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)"; }
+      #container > .thumb > form > img {
+        display: none; }
+  #container > p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: "Parchment MF";
+    line-height: 30px;
+    color: green;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+    #container > p > a {
+      color: green;
+      text-decoration: underline; }
+      #container > p > a:hover {
+        text-decoration: none; }

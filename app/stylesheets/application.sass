@@ -1,0 +1,191 @@
+@import "application/extras"
+@import "application/colors"
+@import "application/fonts"
+
+$ninesixty_gutter_width: 10px
+$ninesixty_grid_width: 960px
+$ninesixty_columns: 8
+
+$free_space: 40px
+$min_width: 960px
+
+$baseline: 20px
+$base: 13px
+
+html
+  :position relative
+  :min-width $min_width + $free_space
+  :min-height 100%
+  
+  &:before, &:after
+    :content ''
+    :position absolute
+    :top 0
+    :width 50%
+    :height 100%
+    :background url(../images/backgrounds/main.jpg) no-repeat right top
+    +background-size(auto 100%)
+  
+  &:before  
+    :left 0
+    +rotate-y(180)
+  
+  &:after
+    :left 100%
+    :margin
+      :left -50%
+  
+html, html a
+  +colors($white, 0 1px 3px rgba(0, 0, 0, 0.5))
+  
+body
+  :font
+    :size $base
+    :family "Lucida Console", sans-serif
+  :-webkit-font-smoothing antialiased
+  :line-height $baseline
+  :height 100%
+  :min-height 100%
+  
+#container
+  +grid-container($min_width - 4)
+  :padding
+    :top 5px
+    :bottom 20px
+  :position relative
+  :z-index 1
+  :background #f8efbf
+  :background rgba(248, 239, 191, 0.9)
+  +box-shadow(0 0 15px rgba(0, 0, 0, 0.5))
+  
+  > h1
+    :height 100px
+    :text
+      :align center
+    :padding
+      :bottom 30px
+    
+    > span
+      :position relative
+      +inline-block
+      :width 780px
+      :height 100%
+      :background url(../images/icons/logo_long.png) no-repeat center
+      +indented
+      :text
+        :align left
+      :border
+        :bottom 1px solid #79b62b
+      +box-shadow(0 1px 0 rgba(0, 0, 0, 0.25))
+  
+  > h2
+    :text
+      :align center
+    :color green
+    :font
+      :size 50px
+      :family "Parchment MF"
+      :weight bold
+    :line-height 80px
+    +text-shadow(0 1px 0 rgba(0, 0, 0, 0.25))
+  
+  > .thumb
+    :position relative
+    :overflow hidden
+    :clear both
+    :margin
+      :left 45px
+      :right 45px
+    :padding
+      :left 5px
+      :right 5px
+      :bottom 5px
+    :text
+      :align justify
+    
+    > img
+      +border-radius(1px)
+      +box-shadow(0 2px 3px rgba(0, 0, 0, 0.5))
+    
+    > p
+      :padding
+        :top 5px
+      :font
+        :size 40px
+        :family "Parchment MF"
+      :line-height 40px
+      :color green
+      +text-shadow(0 1px 0 rgba(0, 0, 0, 0.5))
+      
+      & + form
+        :margin
+          :top 30px
+    
+    &.left > img
+      :float left
+      :margin
+        :right 20px
+    
+    &.right > img
+      :float right
+      :margin
+        :left 20px
+    
+    & + .thumb
+      :margin
+        :top 25px
+      :padding
+        :top 30px
+      
+      &:before, &:after
+        :content ''
+        :position absolute
+        :top 0
+        :left 50%
+        :margin
+          :left -200px
+        :width 400px
+        :height 0
+        :border
+          :top 1px dashed #79b62b
+      
+      &:after
+        :top 1px
+        :border
+          :color #000
+        +opacity(0.25)
+    
+    > form
+      :height 40px
+      
+      > input[type="image"]
+        :height 40px
+        :margin
+          :left 120px
+        +border-radius(30px)
+        +box-shadow(0 2px 3px rgba(0, 0, 0, 0.5))
+        +hover-opacity
+      
+      > img
+        :display none
+  
+  > p
+    :text
+      :align center
+    :margin
+      :top 20px
+    :font
+      :size 30px
+      :family "Parchment MF"
+    :line-height 30px
+    :color green
+    +text-shadow(0 1px 0 rgba(0, 0, 0, 0.5))
+    
+    > a
+      :color green
+      :text
+        :decoration underline
+      
+      &:hover
+        :text
+          :decoration none
